@@ -9,7 +9,7 @@
 		item:'a',next:'[{5}&gt;]',prev:'[{4}&lt;]',format:'[{0}]',
 		itemClass:'paging-item',sideClass:'paging-side',
 		itemCurrent:'selected',length:10,max:1,current:1
-		,href:'#%d',event:true
+		,href:'#{0}',event:true
 	},format=function(str){
 		var arg=arguments;
 		return str.replace(/\{(\d+)\}/g,function(m,d){
