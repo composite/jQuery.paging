@@ -1,3 +1,9 @@
+/**************************************************************************************
+ * jQuery Paging 0.1.0
+ * by composite (ukjinplant@msn.com)
+ * http://composite.tistory.com
+ * This project licensed under a MIT License.
+ **************************************************************************************/;
 (function($){
 	var defs={
 		item:'a',next:'[{5}&gt;]',prev:'[{4}&lt;]',format:'[{0}]',

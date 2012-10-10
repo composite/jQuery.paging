@@ -31,3 +31,5 @@ subtitudes (for format,next,prev property)
 {3} = end page
 {4} = start page of prev part
 {5} = end page of next part
+
+License : MIT
