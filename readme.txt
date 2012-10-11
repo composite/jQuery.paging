@@ -42,4 +42,5 @@ changelog
 first and last button added. and content can appends substitution.
 new option 'append' : If you set this true, paging will generate content without delete target's content. default is false.
 new Substitution {6} : the last page (equal of op.max).
+0.1.6 : first and last content can be false. it will not make first or last button.
 License : MIT

@@ -1,5 +1,5 @@
 /**************************************************************************************
- * jQuery Paging 0.1.5
+ * jQuery Paging 0.1.6
  * by composite (ukjinplant@msn.com)
  * http://composite.tistory.com
  * This project licensed under a MIT License.
@@ -53,7 +53,7 @@
 		if(!op.append) this.empty();
 		//prev button
 		if(op.current>op.length){
-			make(op,1,op.sideClass,op.first);
+			if(op.first!==false) make(op,1,op.sideClass,op.first);
 			make(op,op.start-1,op.sideClass,op.prev);
 		}
 		//pages button
@@ -62,7 +62,7 @@
 		//next button
 		if(op.current<=Math.floor(op.max/op.length)*op.length){
 			make(op,op.end+1,op.sideClass,op.next);
-			make(op,op.max,op.sideClass,op.last);
+			if(op.last!==false) make(op,op.max,op.sideClass,op.last);
 		}
 			
 		//last button
