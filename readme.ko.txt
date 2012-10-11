@@ -21,7 +21,7 @@ jQuery를 위한 간단한 페이징.
 	append : true 설정 시, 기존 내용을 삭제하지 않고 페이징을 포함시킴. 기본값 false.
 	event : 기본 이벤트 활성화. 새로고침 없이 동적으로 페이징 초기화됨. ajax에 유용. 기본값 true.
 	>event=true 일 때 가능한 이벤트 정의.
-	onclick : 페이징 버튼 클릭 시 호출. false 반환 시 동적으로 페이지가 바뀌지 않음.
+	onclick : 페이징 버튼 클릭 시 호출. false 반환 시 동적으로 페이지가 바뀌지 않음. 동적 페이징을 원하지만 href로 인한 링크 이동을 원하지 않을 경우 이벤트 메서드인 event.stopPropagation() 호출.
 	onprev : 이전 버튼 초기화 시 이벤트. 'this' 는 이전 버튼 요소를 가리킴.(plain DOM. not jQuery!)
 	onnext : 다음 버튼 초기화 시 이벤트. 'this' 는 다음 버튼 요소를 가리킴.(plain DOM. not jQuery!)
 	onitem : 각 페이지 버튼 초기화 시 이벤트. 'this' 는 각 페이지 버튼 요소를 가리킴.

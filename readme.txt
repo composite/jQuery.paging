@@ -21,7 +21,7 @@ options :
 	append : If you set true, append paging content instead of replace target's content. default is false.
 	event : activate default events. If you click any item, change paging dynamically. usally for ajax. default is true.
 	>these event will only affected when event=true.
-	onclick : fire event if clicked any items. if you returns false, will not refresh paging.
+	onclick : fire event if clicked any items. if you returns false, will not refresh paging. if you want apply paging but you won't any action such as link action, call event.stopPropagation()!
 	onprev : init additional operation for prev button. 'this' scopes prev button element(plain DOM. not jQuery!)
 	onnext : init additional operation for next button. 'this' scopes next button element(plain DOM. not jQuery!)
 	onitem : init additional operation for each page item button. 'this' scopes any page item element.

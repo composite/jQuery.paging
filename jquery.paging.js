@@ -1,5 +1,5 @@
 /**************************************************************************************
- * jQuery Paging 0.1.6
+ * jQuery Paging 0.1.7
  * by composite (ukjinplant@msn.com)
  * http://composite.tistory.com
  * This project licensed under a MIT License.
@@ -28,6 +28,7 @@
 				if($.isFunction(op.onclick)) fired=op.onclick.call(item,e,page,op);
 				if(fired==undefined||fired)
 					op.origin.paging($.extend({},op,{current:page}));
+				return fired;
 			}).appendTo(op.origin);
 			//bind event for each elements.
 			var ev='on';
@@ -46,7 +47,6 @@
 	$.fn.paging=function(op){
 		op=$.extend({origin:this},defs,op||{});this.html('');
 		if(op.max<1) op.max=1; if(op.current<1) op.current=1;
-		var origin=this;
 		op.start=Math.floor((op.current-1)/op.length)*op.length+1;
 		op.end=op.start-1+op.length;
 		if(op.end>op.max) op.end=op.max;
