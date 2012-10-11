@@ -6,6 +6,7 @@
 		<style type="text/css">
 			#paging{text-align:center;}
 			a.paging-item,a.paging-side{margin:0 .25em;}
+			a.paging-item.selected{font-weight:bold;}
 		</style>
 	</head>
 	<body>
@@ -13,7 +14,12 @@
 		<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
 		<script type="text/javascript" src="jquery.paging.js"></script>
 		<script type="text/javascript">
-			$('#paging').paging({current:5,max:45});
+			$('#paging').paging({
+				current:5,max:45,
+				onclick:function(e,page){
+					alert('going to page '+page);
+				}
+			});
 		</script>
 	</body>
 </html>
