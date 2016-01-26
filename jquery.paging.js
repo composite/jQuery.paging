@@ -58,7 +58,8 @@
 				op=$.extend(this.__JQ_PAGING,op||{});$(this).empty();
 			}else if(op instanceof String || typeof op === 'string') return false;
 			else{
-				op=$.extend({origin:this},defs,op||{});$(this).addClass(op.className).empty();
+				op=$.extend({origin:this},defs,op||{});
+				$(this).addClass(op.className).empty();
 			}
 			if(op.max<1) op.max=1; if(op.current<1) op.current=1;
 			op.start=~~((op.current-1)/op.length)*op.length+1;
