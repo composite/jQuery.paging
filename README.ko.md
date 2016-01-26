@@ -4,6 +4,14 @@
 
 당신이 어떤 프론트엔드 환경을 쓰던 페이징은 한결같이 심플하게.
 
+## 설치
+
+`bower install jquery.paging`
+
+또는 ZIP 파일을 다운로드 후 원하는 스크립트 폴더에 풀기.
+
+requirements: `jquery >= 1.5.0`
+
 ## 사용법
 
 ```js
@@ -76,7 +84,7 @@ event=true 일 때 가능한 이벤트 정의..
 
 ## 데모
 
-
+[jsFiddle](https://jsfiddle.net/composite/8eyccoft/)
 
 ## 판올림 내역
 

@@ -12,6 +12,14 @@ oh, sorry western users. this is a simple pagination library.
 most korean users called pagination as "paging".
 so, I decided named to "jquery.paging" from few years ago for korean users.
 
+## Install
+
+`bower install jquery.paging`
+
+or, download ZIP, extract and place files to your script folder.
+
+requirements: `jquery >= 1.5.0`
+
 ## Usage
 
 ```js
@@ -85,7 +93,7 @@ these event will only affected when event=true.
 
 ## Demo
 
-
+[jsFiddle](https://jsfiddle.net/composite/8eyccoft/)
 
 ## Changelog
 
