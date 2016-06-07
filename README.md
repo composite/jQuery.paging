@@ -97,6 +97,7 @@ these event will only affected when event=true.
 
 ## Changelog
 
+- 0.2.1 : fixed incorrect condition of show/hide the `next` and `last` button.
 - 0.2.0 : remove `append` property due to unstable and unused.
 added new property `className` for managing pagination container.
 paging options will stored on targeted element for call again with override.

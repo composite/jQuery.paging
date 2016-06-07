@@ -1,5 +1,5 @@
 /*!************************************************************************************
- * jQuery Paging 0.2.0
+ * jQuery Paging 0.2.1
  * by composite (ukjinplant@msn.com)
  * http://hazard.kr
  * This project licensed under a MIT License.
@@ -14,7 +14,7 @@
 		,href:'#{0}',event:true,first:'[1&lt;&lt;]',last:'[&gt;&gt;{6}]'
 	},format=function(str){
 		var arg=arguments;
-		return str.replace(/\{(\d+)\}/g,function(m,d){
+		return str.replace(/\{(\d+)}/g,function(m,d){
 			if(+d<0) return m;
 			else return arg[+d+1]||"";
 		});
@@ -73,7 +73,7 @@
 			for(var i=op.start;i<=op.end;i++)
 				make(op,i,op.itemClass+(i==op.current?' '+op.itemCurrent:''),op.format);
 
-			if(op.current<op.max-op.length){
+			if(op.current/op.length<op.max/op.length){
 				if(op.end<op.max) make(op,op.end+1,op.sideClass,op.next);//next button
 				if(op.last!==false) make(op,op.max,op.sideClass,op.last);//last button
 			}

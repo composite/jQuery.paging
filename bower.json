@@ -1,6 +1,6 @@
 {
         "name": "jquery.paging",
-        "version": "0.2.0",
+        "version": "0.2.1",
         "description": "The pagination made simple. even you using any front-end enviroment.",
         "keywords": ["page","paging","pagination","jquery"],
         "authors": ["Composite"],
