@@ -1,3 +1,5 @@
+**This project was deprecated and no maintaince. Please use [pagings](https://github.com/composite/pagings) intead, same as this project, flexible, more simple, but no dependencies.**
+
 # Jquery Paging
 
 0.2.0
